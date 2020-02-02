@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">TicTacToe</string>
+    <string name="restart_text">Заново</string>
+    <string name="close_text">Закрыть</string>
+    <string name="circle">Нолик</string>
+    <string name="cross">Крестик</string>
 </resources>

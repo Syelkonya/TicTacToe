@@ -8,82 +8,136 @@
 
 
     <LinearLayout
-        android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@color/colorPrimary"
         android:orientation="horizontal">
 
         <ImageButton
-            android:id="@+id/cell_1_1"
+            android:id="@+id/cell_1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorWhite" />
 
         <ImageButton
-            android:id="@+id/cell_2_1"
+            android:id="@+id/cell_2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorWhite" />
 
         <ImageButton
-            android:id="@+id/cell_3_1"
+            android:id="@+id/cell_3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorWhite" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@color/colorPrimary"
         android:orientation="horizontal">
 
         <ImageButton
-            android:id="@+id/cell_1_2"
+            android:id="@+id/cell_4"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorWhite" />
 
         <ImageButton
-            android:id="@+id/cell_2_2"
+            android:id="@+id/cell_5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorWhite" />
 
         <ImageButton
-            android:id="@+id/cell_3_2"
+            android:id="@+id/cell_6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorWhite" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@color/colorPrimary"
         android:orientation="horizontal">
 
         <ImageButton
-            android:id="@+id/cell_1_3"
+            android:id="@+id/cell_7"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorWhite" />
 
         <ImageButton
-            android:id="@+id/cell_2_3"
+            android:id="@+id/cell_8"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorWhite" />
 
         <ImageButton
-            android:id="@+id/cell_3_3"
+            android:id="@+id/cell_9"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorWhite" />
 
     </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_with_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5">
+
+        <ImageView
+            android:id="@+id/image_cross"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standart_margin" />
+
+        <TextView
+            android:id="@+id/win_counter_cross"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_cross"
+            android:layout_alignStart="@+id/image_cross"
+            android:layout_alignEnd="@+id/image_cross"
+            android:gravity="center"
+            android:textSize="@dimen/big_text_size"
+            />
+
+        <ImageView
+            android:id="@+id/image_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standart_margin"
+            android:layout_toEndOf="@+id/image_cross" />
+
+        <TextView
+            android:id="@+id/win_counter_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/image_circle"
+            android:layout_alignEnd="@+id/image_circle"
+            android:layout_below="@+id/image_circle"
+            android:gravity="center"
+            android:textSize="@dimen/big_text_size"/>
+
+    </RelativeLayout>
 
 
 </LinearLayout>
